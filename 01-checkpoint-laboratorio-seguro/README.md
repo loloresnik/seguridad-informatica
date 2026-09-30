@@ -15,7 +15,9 @@ La máquina virtual fue configurada en VirtualBox utilizando el modo **NAT**.
 
 El modo NAT permite que la máquina virtual tenga conectividad de red para descargar actualizaciones y herramientas, pero evita que la VM quede directamente expuesta como un equipo independiente dentro de la red local del host. Esto reduce la superficie de exposición durante las prácticas.
 
-**Evidencia:** [01_red_nat.png](./evidencias/01_red_nat.png)
+**Evidencia:**
+
+![Configuración de red NAT](./Imagen1.png)
 
 ---
 
@@ -23,9 +25,11 @@ El modo NAT permite que la máquina virtual tenga conectividad de red para desca
 
 El laboratorio se realizó sobre Debian GNU/Linux. La sesión utilizada corresponde al usuario **uade**, visible en el prompt de la terminal como `uade@debiand`.
 
-La práctica se realiza desde una cuenta de trabajo y no desde una sesión `root`, siguiendo el principio de menor privilegio. La evidencia disponible muestra la sesión iniciada con `uade`; una comprobación adicional recomendable es ejecutar `id` y `sudo -l` para documentar exactamente los privilegios asignados.
+La práctica se realiza desde una cuenta de trabajo y no desde una sesión `root`, siguiendo el principio de menor privilegio. La evidencia disponible muestra la sesión iniciada con `uade`.
 
-**Evidencia:** [02_usuario_trabajo.png](./evidencias/02_usuario_trabajo.png)
+**Evidencia:**
+
+![Usuario de trabajo](./Imagen2.png)
 
 ---
 
@@ -35,7 +39,9 @@ Se ejecutaron procesos de actualización de paquetes mediante APT. La terminal m
 
 Mantener el sistema actualizado permite incorporar correcciones de errores y vulnerabilidades conocidas y constituye una medida básica de mantenimiento de seguridad.
 
-**Evidencia:** [03_actualizaciones_apt.png](./evidencias/03_actualizaciones_apt.png)
+**Evidencia:**
+
+![Actualizaciones y permisos](./Imagen3.png)
 
 ---
 
@@ -55,7 +61,9 @@ La salida permite observar los permisos y el propietario del archivo:
 
 Esto evidencia el uso de permisos Unix para controlar quién puede leer, modificar o ejecutar un archivo.
 
-**Evidencia:** [04_permisos_ls-l.png](./evidencias/04_permisos_ls-l.png)
+**Evidencia:**
+
+![Permisos del archivo](./Imagen3.png)
 
 ---
 
@@ -67,7 +75,9 @@ Como punto de recuperación se creó una instantánea de VirtualBox denominada:
 
 La instantánea funciona como un punto de restauración de la máquina virtual. Si durante futuras prácticas una modificación provoca un problema, permite regresar al estado previamente guardado.
 
-**Evidencia:** [05_snapshot_hardening.png](./evidencias/05_snapshot_hardening.png)
+**Evidencia:**
+
+![Snapshot inicial](./Imagen4.png)
 
 ---
 
@@ -85,4 +95,4 @@ La instantánea funciona como un punto de restauración de la máquina virtual. 
 
 La máquina de prácticas quedó preparada sobre Debian GNU/Linux dentro de VirtualBox, utilizando NAT, una cuenta de trabajo sin sesión root, actualización de paquetes, control de permisos mediante Unix y un snapshot de recuperación. Estas medidas forman una base segura para continuar con los siguientes laboratorios de ciberseguridad.
 
-> **Nota:** El enunciado menciona Windows para una de sus evidencias, pero también permite elegir Linux y recomienda Linux para ciberseguridad. Por eso este laboratorio se documenta sobre Debian GNU/Linux. No se inventan evidencias de Windows que no fueron realizadas.
+> **Nota:** El enunciado permite realizar el laboratorio sobre Windows o Linux y recomienda Linux para ciberseguridad. Por eso este laboratorio se documenta sobre Debian GNU/Linux.
