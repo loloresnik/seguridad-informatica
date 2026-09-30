@@ -129,7 +129,21 @@ SYN → SYN/ACK → ACK
 
 ---
 
-## 7. Comparación de seguridad
+## 7. Evidencias de la práctica
+
+Se incorporó una captura con las cinco evidencias principales realizadas durante el laboratorio:
+
+1. Resolución DNS de `neverssl.com`.
+2. Solicitud HTTP mediante `GET /`.
+3. Respuesta HTTP `200 OK`.
+4. Comunicación HTTPS mediante TLS.
+5. Establecimiento de una conexión TCP mediante SYN → SYN/ACK → ACK.
+
+![Evidencias del Checkpoint 3](evidencias.jpg)
+
+---
+
+## 8. Comparación de seguridad
 
 ### HTTP
 
@@ -148,18 +162,6 @@ HTTPS utiliza TLS para proteger la comunicación. Proporciona:
 Una VPN crea un túnel cifrado entre el dispositivo y el servidor VPN. Esto protege el tráfico en ese tramo de la comunicación.
 
 Una VPN no convierte HTTP en HTTPS: la seguridad de la comunicación con el sitio de destino sigue dependiendo del protocolo utilizado hacia ese destino.
-
----
-
-## 8. Evidencias
-
-Las capturas realizadas durante la práctica permiten demostrar:
-
-1. Resolución DNS de `neverssl.com`.
-2. Solicitud HTTP mediante `GET /`.
-3. Respuesta HTTP `200 OK`.
-4. Comunicación HTTPS mediante TLS.
-5. Establecimiento de una conexión TCP mediante SYN → SYN/ACK → ACK.
 
 ---
 
