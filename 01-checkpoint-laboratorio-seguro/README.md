@@ -17,7 +17,7 @@ El modo NAT permite que la máquina virtual tenga conectividad de red para desca
 
 **Evidencia:**
 
-![Configuración de red NAT](./Imagen1.png)
+![Configuración de red NAT](./Imagen3.png)
 
 ---
 
@@ -29,7 +29,7 @@ La práctica se realiza desde una cuenta de trabajo y no desde una sesión `root
 
 **Evidencia:**
 
-![Usuario de trabajo](./Imagen2.png)
+![Usuario de trabajo](./Imagen1.png)
 
 ---
 
@@ -41,7 +41,7 @@ Mantener el sistema actualizado permite incorporar correcciones de errores y vul
 
 **Evidencia:**
 
-![Actualizaciones y permisos](./Imagen3.png)
+![Actualización del sistema](./Imagen2.png)
 
 ---
 
@@ -61,9 +61,11 @@ La salida permite observar los permisos y el propietario del archivo:
 
 Esto evidencia el uso de permisos Unix para controlar quién puede leer, modificar o ejecutar un archivo.
 
+La misma captura contiene la evidencia de la actualización del sistema y de la ejecución de `ls -l`.
+
 **Evidencia:**
 
-![Permisos del archivo](./Imagen3.png)
+![Permisos del archivo](./Imagen2.png)
 
 ---
 
