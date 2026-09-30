@@ -97,4 +97,3 @@ La instantánea funciona como un punto de restauración de la máquina virtual. 
 
 La máquina de prácticas quedó preparada sobre Debian GNU/Linux dentro de VirtualBox, utilizando NAT, una cuenta de trabajo sin sesión root, actualización de paquetes, control de permisos mediante Unix y un snapshot de recuperación. Estas medidas forman una base segura para continuar con los siguientes laboratorios de ciberseguridad.
 
-> **Nota:** El enunciado permite realizar el laboratorio sobre Windows o Linux y recomienda Linux para ciberseguridad. Por eso este laboratorio se documenta sobre Debian GNU/Linux.
