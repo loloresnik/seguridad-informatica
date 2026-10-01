@@ -50,6 +50,10 @@ La respuesta DNS mostró:
 
 La evidencia permite observar cómo el nombre de dominio es traducido a una dirección IPv4 antes de establecer la comunicación con el servidor.
 
+**Evidencia:**
+
+![Resolución DNS de neverssl.com](./evidencia_01.jpg)
+
 ---
 
 ## 4. Análisis de tráfico HTTP
@@ -67,11 +71,19 @@ Se identificó una solicitud HTTP hacia NeverSSL con:
 - **Versión:** `HTTP/1.1`
 - **Host:** `neverssl.com`
 
+**Evidencia de la solicitud GET:**
+
+![Solicitud HTTP GET](./evidencia_02.jpg)
+
 También se observó la respuesta:
 
 ```
 HTTP/1.1 200 OK
 ```
+
+**Evidencia de la respuesta HTTP 200 OK:**
+
+![Respuesta HTTP 200 OK](./evidencia_03.jpg)
 
 El análisis demuestra que determinados elementos de la comunicación HTTP pueden observarse directamente en Wireshark, como el método, la URI, el Host y otros encabezados.
 
@@ -98,6 +110,10 @@ La captura mostró comunicaciones **TLSv1.2** y **TLSv1.3**, incluyendo mensajes
 La comunicación se realizó mediante el puerto **443**.
 
 A diferencia del tráfico HTTP observado anteriormente, no se pudo leer directamente el contenido HTTP de la página. En su lugar, Wireshark mostró los mensajes y datos de aplicación protegidos por TLS.
+
+**Evidencia:**
+
+![Comunicación HTTPS mediante TLS](./evidencia_04.jpg)
 
 ---
 
@@ -127,23 +143,13 @@ Secuencia:
 SYN → SYN/ACK → ACK
 ```
 
----
+**Evidencia:**
 
-## 7. Evidencias de la práctica
-
-Se incorporó una captura con las cinco evidencias principales realizadas durante el laboratorio:
-
-1. Resolución DNS de `neverssl.com`.
-2. Solicitud HTTP mediante `GET /`.
-3. Respuesta HTTP `200 OK`.
-4. Comunicación HTTPS mediante TLS.
-5. Establecimiento de una conexión TCP mediante SYN → SYN/ACK → ACK.
-
-![Evidencias del Checkpoint 3](evidencias.jpg)
+![Three-Way Handshake TCP](./evidencia_05.jpg)
 
 ---
 
-## 8. Comparación de seguridad
+## 7. Comparación de seguridad
 
 ### HTTP
 
@@ -165,7 +171,7 @@ Una VPN no convierte HTTP en HTTPS: la seguridad de la comunicación con el siti
 
 ---
 
-## 9. Conclusión
+## 8. Conclusión
 
 La práctica permitió observar directamente cómo una navegación web genera diferentes protocolos y etapas de comunicación.
 
