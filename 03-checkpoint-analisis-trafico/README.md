@@ -52,7 +52,7 @@ La evidencia permite observar cómo el nombre de dominio es traducido a una dire
 
 **Evidencia:**
 
-![Resolución DNS de neverssl.com](./evidencia_01.jpg)
+![Resolución DNS de neverssl.com](./Captura%20de%20pantalla%202026-10-01%20003616.png)
 
 ---
 
@@ -73,7 +73,7 @@ Se identificó una solicitud HTTP hacia NeverSSL con:
 
 **Evidencia de la solicitud GET:**
 
-![Solicitud HTTP GET](./evidencia_02.jpg)
+![Solicitud HTTP GET](./Captura%20de%20pantalla%202026-10-01%20003653.png)
 
 También se observó la respuesta:
 
@@ -83,7 +83,7 @@ HTTP/1.1 200 OK
 
 **Evidencia de la respuesta HTTP 200 OK:**
 
-![Respuesta HTTP 200 OK](./evidencia_03.jpg)
+![Respuesta HTTP 200 OK](./Captura%20de%20pantalla%202026-10-01%20003716.png)
 
 El análisis demuestra que determinados elementos de la comunicación HTTP pueden observarse directamente en Wireshark, como el método, la URI, el Host y otros encabezados.
 
@@ -113,7 +113,7 @@ A diferencia del tráfico HTTP observado anteriormente, no se pudo leer directam
 
 **Evidencia:**
 
-![Comunicación HTTPS mediante TLS](./evidencia_04.jpg)
+![Comunicación HTTPS mediante TLS](./Captura%20de%20pantalla%202026-10-01%20003732.png)
 
 ---
 
@@ -145,7 +145,7 @@ SYN → SYN/ACK → ACK
 
 **Evidencia:**
 
-![Three-Way Handshake TCP](./evidencia_05.jpg)
+![Three-Way Handshake TCP](./Captura%20de%20pantalla%202026-10-01%20003749.png)
 
 ---
 
