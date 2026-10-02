@@ -116,5 +116,3 @@ Aplicar mecanismos básicos de protección de credenciales y almacenamiento medi
 ## 5. Resultado
 
 La práctica fue realizada en Debian mediante **KeePassXC** y **VeraCrypt**. Se documentaron las principales etapas de creación, configuración, utilización y desmontaje de la bóveda y del contenedor seguro.
-
-> **Nota de seguridad:** no se incluyen en el repositorio la base de datos `.kdbx`, el contenedor VeraCrypt `.hc`, archivos de claves ni contraseñas reales. Las imágenes corresponden a evidencias de la práctica.
