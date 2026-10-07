@@ -134,4 +134,3 @@ Este repositorio funciona como una muestra de mi progreso técnico y de mi capac
 
 ---
 
-> **Nota:** Las prácticas de este repositorio se realizan en entornos de laboratorio y con fines educativos. No se incluyen credenciales reales ni información sensible.
