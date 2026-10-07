@@ -32,12 +32,25 @@ La solicitud capturada mostró los siguientes datos:
 
 | Dato | Resultado |
 |---|---|
-| Protocolo | HTTP |
-| Request URL | `http://youngbeautifulwonderouszen.neverssl.com/online/` |
-| Método | GET |
-| Estado | 200 OK |
-| Puerto | 80 |
-| Host | `youngbeautifulwonderouszen.neverssl.com` |
+| **Protocolo** | HTTP |
+| **Request URL** | `http://youngbeautifulwonderouszen.neverssl.com/online/` |
+| **Request Method** | GET |
+| **Status Code** | 200 OK |
+| **Remote Address** | `34.223.124.45:80` |
+| **Host** | `youngbeautifulwonderouszen.neverssl.com` |
+| **Puerto** | 80 |
+
+### Request Headers observados
+
+| Header | Valor observado |
+|---|---|
+| **Host** | `youngbeautifulwonderouszen.neverssl.com` |
+| **User-Agent** | Google Chrome 154 / Linux x86_64 |
+| **Accept** | Tipos de contenido aceptados por Chrome |
+| **Accept-Encoding** | `gzip, deflate` |
+| **Accept-Language** | `es-ES,es;q=0.9` |
+| **Connection** | `keep-alive` |
+| **Upgrade-Insecure-Requests** | `1` |
 
 ### Evidencia 2 — Network
 
