@@ -155,4 +155,3 @@ El ejercicio permite comprender por qué el cifrado, HTTPS y el uso de un túnel
 - HTTP / HTTPS
 - Git / GitHub
 
-> Práctica realizada con fines educativos en un entorno de laboratorio. No se incluyen credenciales reales ni información sensible.
