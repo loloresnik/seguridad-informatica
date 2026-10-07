@@ -28,7 +28,7 @@ Durante la práctica, Chrome accedió a una dirección de prueba de NeverSSL y p
 
 ## Evidencia observada
 
-La solicitud capturada mostró los siguientes datos:
+La solicitud capturada en Chrome permitió identificar información visible de la comunicación HTTP.
 
 | Dato | Resultado |
 |---|---|
@@ -40,53 +40,29 @@ La solicitud capturada mostró los siguientes datos:
 | **Host** | `youngbeautifulwonderouszen.neverssl.com` |
 | **Puerto** | 80 |
 
-### Request Headers observados
-
-| Header | Valor observado |
-|---|---|
-| **Host** | `youngbeautifulwonderouszen.neverssl.com` |
-| **User-Agent** | Google Chrome 154 / Linux x86_64 |
-| **Accept** | Tipos de contenido aceptados por Chrome |
-| **Accept-Encoding** | `gzip, deflate` |
-| **Accept-Language** | `es-ES,es;q=0.9` |
-| **Connection** | `keep-alive` |
-| **Upgrade-Insecure-Requests** | `1` |
-
 ### Evidencia 2 — Network
 
-Se abrió la herramienta **Network** de Chrome para registrar las solicitudes realizadas por el navegador.
+Se abrió la herramienta **Network** de Chrome para observar las solicitudes realizadas por el navegador.
 
 ![Network](./Captura%20de%20pantalla%202026-10-06%20215248.png)
 
 ### Evidencia 3 — Datos de la solicitud
 
-La sección **Headers** permite observar la URL solicitada, el método utilizado, el código de estado y la dirección remota.
+En la sección **Headers** se puede observar la información principal de la solicitud, incluyendo la URL solicitada, el método HTTP, el código de estado y la dirección remota.
 
 ![Datos de la solicitud HTTP](./Captura%20de%20pantalla%202026-10-06%20215304.png)
 
-También se observaron diferentes **Request Headers**, entre ellos:
-
-- Host
-- User-Agent
-- Accept
-- Accept-Encoding
-- Accept-Language
-- Connection
-- Upgrade-Insecure-Requests
-
-Estas cabeceras permiten observar información relacionada con el destino de la comunicación y características del cliente, como el navegador, sistema operativo, idioma y formatos aceptados.
-
 ### Evidencia 4 — Request Headers
+
+La captura muestra los encabezados enviados por el navegador. Entre la información visible se encuentran datos como el **Host** y características del cliente.
 
 ![Request Headers](./Captura%20de%20pantalla%202026-10-06%20215322.png)
 
 ### Evidencia 5 — Confirmación de HTTP
 
-Esta captura muestra de forma directa la URL con `http://`, el método `GET`, el estado `200 OK` y el puerto `80`.
+Esta captura permite confirmar que la comunicación analizada utiliza **HTTP**, con una solicitud **GET**, respuesta **200 OK** y comunicación por el **puerto 80**.
 
 ![Evidencia HTTP](./Captura%20de%20pantalla%202026-10-06%20215339.png)
-
----
 
 ## HTTP vs HTTPS
 
