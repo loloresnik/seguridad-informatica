@@ -71,11 +71,11 @@ Se trabajó con:
 
 ### 06 — Seguridad en redes Wi-Fi públicas
 
-Actualmente estoy trabajando en una práctica orientada al análisis de los riesgos de utilizar redes Wi-Fi públicas.
+Práctica orientada al análisis de los riesgos de utilizar redes Wi-Fi públicas.
 
 Se estudia la diferencia entre **HTTP y HTTPS**, la información que puede observarse durante una solicitud y el papel de una **VPN** para proteger el tráfico mediante cifrado y un túnel seguro.
 
-📁 [practica-wifi-segura](./practica-wifi-segura)
+📁 [06-pre-entrega-wifi-segura](./06-pre-entrega-wifi-segura)
 
 ---
 
