@@ -20,6 +20,10 @@ NeverSSL está diseñado para permitir observar una conexión HTTP sin el cifrad
 
 Durante la práctica, Chrome accedió a una dirección de prueba de NeverSSL y permitió observar una solicitud HTTP.
 
+### Evidencia 1 — Acceso al sitio
+
+![Acceso a NeverSSL](./Captura%20de%20pantalla%202026-10-06%20215229.png)
+
 ---
 
 ## Evidencia observada
@@ -35,6 +39,18 @@ La solicitud capturada mostró los siguientes datos:
 | Puerto | 80 |
 | Host | `youngbeautifulwonderouszen.neverssl.com` |
 
+### Evidencia 2 — Network
+
+Se abrió la herramienta **Network** de Chrome para registrar las solicitudes realizadas por el navegador.
+
+![Network](./Captura%20de%20pantalla%202026-10-06%20215248.png)
+
+### Evidencia 3 — Datos de la solicitud
+
+La sección **Headers** permite observar la URL solicitada, el método utilizado, el código de estado y la dirección remota.
+
+![Datos de la solicitud HTTP](./Captura%20de%20pantalla%202026-10-06%20215304.png)
+
 También se observaron diferentes **Request Headers**, entre ellos:
 
 - Host
@@ -47,15 +63,15 @@ También se observaron diferentes **Request Headers**, entre ellos:
 
 Estas cabeceras permiten observar información relacionada con el destino de la comunicación y características del cliente, como el navegador, sistema operativo, idioma y formatos aceptados.
 
-### Capturas
+### Evidencia 4 — Request Headers
 
-Las evidencias de la práctica se incorporarán en esta carpeta:
+![Request Headers](./Captura%20de%20pantalla%202026-10-06%20215322.png)
 
-- `01-neverssl-http.png`
-- `02-network.png`
-- `03-http-headers.png`
-- `04-request-headers.png`
-- `05-http-evidencia.png`
+### Evidencia 5 — Confirmación de HTTP
+
+Esta captura muestra de forma directa la URL con `http://`, el método `GET`, el estado `200 OK` y el puerto `80`.
+
+![Evidencia HTTP](./Captura%20de%20pantalla%202026-10-06%20215339.png)
 
 ---
 
